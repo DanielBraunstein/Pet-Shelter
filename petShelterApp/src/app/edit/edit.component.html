@@ -1,0 +1,14 @@
+<div class='edit'>
+    <p>edit pet {{petName}}</p>
+    <!-- <p *ngIf="errorMsg" class="error">{{errorMsg}}</p> -->
+    <form (submit)="updatePet()">
+      <input id="editPetName" name = "name" [(ngModel)] = "petPost.name">
+      <input id= "editPetType" name = "type" [(ngModel)] = "petPost.type">
+      <input id= "editPetDesc" name = "Desc" [(ngModel)] = "petPost.description">
+      <input id= "editPetSkill1" name = "skill1" [(ngModel)] = "petPost.skill1">
+      <input id= "editPetSkill2" name = "skill2" [(ngModel)] = "petPost.skill2">
+      <input id= "editPetSkill3" name = "skill3" [(ngModel)] = "petPost.skill3">
+      <button type="submit" value="Submit">edit Pet</button>
+      <button type="button"class = 'btn btn warning' routerLink = "['/']">Cancel</button>
+    </form>
+  </div>

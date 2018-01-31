@@ -1,0 +1,22 @@
+<div class='new'>
+  <p>Know of a pet in need of a home?</p>
+  <p *ngIf="errorMsg" class="error">{{errorMsg}}</p>
+  <form (submit)="createPet()">
+    <p>Pet Name:</p>
+    <input id="newPetName" name = "name" [(ngModel)] = "pet.name">
+    <p>Pet Type</p>
+    <input id= "newPetType" name = "type" [(ngModel)] = "pet.type">
+    <p>Description:</p>
+    <input id= "newPetdesc" name = "desc" [(ngModel)] = "pet.description">
+    <p>Skills (Optional):</p>
+    <p>Skill 1:</p>
+    <input id= "newPetskill1" name = "skill1" [(ngModel)] = "pet.skill1">
+    <p>Skill 2:</p>
+    <input id= "newPetskill2" name = "skill2" [(ngModel)] = "pet.skill2">
+    <p>Skill 3:</p>
+    <input id= "newPetskill3" name = "skill3" [(ngModel)] = "pet.skill3"> 
+    <button type="submit" value="Submit">Add Pet</button>
+    <button type="button"class = 'btn btn warning' routerLink = "['/']">Cancel</button>
+  </form>
+</div>
+{{author | json}}

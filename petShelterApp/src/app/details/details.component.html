@@ -1,0 +1,15 @@
+<div class='details'>
+    <button type="button"class = 'btn btn warning' routerLink = "['/']">Home</button>
+    <p>details about {{petDetails.name}}</p>
+    <!-- <p *ngIf="errorMsg" class="error">{{errorMsg}}</p> -->
+    <p>Name: {{petDetails.name}}</p>
+    <p>Type: {{petDetails.type}}</p>
+    <p>Description: {{petDetails.description}}</p>
+    <p>Skill1: {{petDetails.skill1}}</p>
+    <p>Skill2: {{petDetails.skill2}}</p>
+    <p>Skill3: {{petDetails.skill3}}</p>
+    <p>Likes: {{petDetails.likes}}</p>
+
+    <button class="btn btn-like" (click)="likePet()">Like</button>
+    <button class="btn btn-delete" (click)="adopt()">Adopt</button>
+  </div>
